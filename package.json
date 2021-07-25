@@ -6,7 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "start": "tsc && ts-node-dev --respawn --transpile-only main.ts"
+    "start": "tsc && ts-node-dev --respawn --transpile-only main.ts",
+    "start1": "ts-node main.ts"
   },
   "dependencies": {
     "@types/node": "^14.17.6",
