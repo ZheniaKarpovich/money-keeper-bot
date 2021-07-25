@@ -58,7 +58,9 @@ bot.hears(/[0-9]*[.[0-9]+]?/, (ctx) => {
   ctx.scene.enter('money-input');
 });
 
-bot.launch();
+bot.launch().then(() => {
+  console.info(`Bot ${bot.botInfo.username} is up and running`)
+});
 
 // Enable graceful stop
 process.once('SIGINT', async () => {
