@@ -43,7 +43,7 @@ bot.use(async (ctx, next) => {
       password: process.env.DATABASE_PASSWORD,
       database: process.env.DATABASE_NAME,
       url: process.env.DATABASE_URL,
-      entities: ['entities/**/*.ts'],
+      entities: ['dist/entities/**/*.js'],
       ssl: {
         rejectUnauthorized: false,
       },
