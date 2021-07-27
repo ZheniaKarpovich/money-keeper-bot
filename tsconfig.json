@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ES2020",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,

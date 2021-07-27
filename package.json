@@ -8,7 +8,7 @@
   "type": "module",
   "engines": { "node": "14.16.0" },
   "scripts": {
-    "start": "tsc && ts-node-dev --respawn --transpile-only main.ts",
+    "start": "ts-node-dev --respawn --transpile-only main.ts",
     "postinstall": "tsc",
     "start1": "node dist/main.js"
   },
