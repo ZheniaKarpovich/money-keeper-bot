@@ -43,6 +43,12 @@ bot.use(async (ctx, next) => {
       password: process.env.DATABASE_PASSWORD,
       database: process.env.DATABASE_NAME,
       entities: ['entities/**/*.ts'],
+      ssl: true,
+      extra: {
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      },
     });
   }
 
@@ -59,7 +65,7 @@ bot.hears(/[0-9]*[.[0-9]+]?/, (ctx) => {
 });
 
 bot.launch().then(() => {
-  console.info(`Bot ${bot.botInfo.username} is up and running`)
+  console.info(`Bot ${bot.botInfo.username} is up and running`);
 });
 
 // Enable graceful stop

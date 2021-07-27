@@ -12,7 +12,4 @@
     "baseUrl": "./",
     "incremental": true
   },
-  "exclude" : [
-    "node_modules"  /* exclude everything in  node_modules */
-  ]
 }
