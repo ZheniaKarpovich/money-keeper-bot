@@ -1,1 +1,1 @@
-worker: npm run start1
+worker: node dist/main.js
