@@ -5,6 +5,7 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "type": "module",
   "engines": { "node": "14.16.0" },
   "scripts": {
     "start": "tsc && ts-node-dev --respawn --transpile-only main.ts",
