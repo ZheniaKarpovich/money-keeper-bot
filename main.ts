@@ -44,6 +44,10 @@ bot.use(async (ctx, next) => {
       database: process.env.DATABASE_NAME,
       url: process.env.DATABASE_URL,
       entities: ['dist/entities/**/*.js'],
+      migrations: ['migration/**/*.ts'],
+      cli: {
+        migrationsDir: 'migration',
+      },
       ssl: {
         rejectUnauthorized: false,
       },
